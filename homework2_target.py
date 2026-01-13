@@ -21,8 +21,11 @@ sleep(10)
 
 
 signin_text= driver.find_element(By.XPATH,"//h1[contains(text(),'Sign in or create account')]")
+print(f"The actual text is",signin_text.text)
 
-print(f"The sign in text found",signin_text.text)
+expected_text = "Sign in or create account"
+assert signin_text.text ==expected_text, f"Expected '{expected_text}' but got '{signin_text.text}'"
+print('Test case passed')
 
 login_button=driver.find_element(By.XPATH,"//button[@type='submit' and @id='login']")
 sleep(5)
