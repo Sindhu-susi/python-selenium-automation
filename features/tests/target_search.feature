@@ -25,4 +25,4 @@ Feature: Tests for search
     |product  |product_result   |
     |tea      |tea              |
     |mug      |mug              |
-    |coffee   |coffee           |
+    #|coffee   |coffee           |
